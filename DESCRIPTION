@@ -1,0 +1,23 @@
+Package: genepro
+Type: Package
+Title: genepro: DNA/RNA/Protein sequence analysis after multiple
+        sequences alignment
+Version: 0.1.0
+Author: person(given = 'Zhe', family = 'Zhang', email = 'zzhe@webmail.hzau.edu.cn', 
+               role = 'aut', comment = c(ORCID = '0000-0001-5265-6069'))
+Maintainer: Zhe Zhang <zzhe@webmail.hzau.edu.cn>
+Description: A sequence analysis system including sequence digitization, 
+             dimensionality reduction, specific site search, pseudotime 
+             analysis, network construction and result visualization.
+Depends: R (>= 3.5.0)
+Imports: Biostrings, Seurat, cowplot, ggplot2, ggrepel, ggsci,
+        ggseqlogo, igraph, monocle, reshape2, methods, stats, utils,
+        VGAM, BiocGenerics, xtable, SeuratObject
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-27 02:39:21 UTC; 32800
