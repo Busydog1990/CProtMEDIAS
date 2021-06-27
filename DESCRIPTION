@@ -9,7 +9,7 @@ Maintainer: Zhe Zhang <zzhe@webmail.hzau.edu.cn>
 Description: A sequence analysis system including sequence digitization, 
              dimensionality reduction, specific site search, pseudotime 
              analysis, network construction and result visualization.
-Depends: R (>= 3.5.0), Rcpp (>= 1.0.5), Matrix (<= 1.3-2), 
+Depends: R (>= 3.5.0), Rcpp (>= 1.0.4), Matrix (<= 1.3-2), 
          Biostrings, Seurat, igraph, monocle, ggsci, ggrepel, cowplot
 Imports: Biostrings, Seurat, cowplot, ggplot2, ggrepel, ggsci,
         ggseqlogo, igraph, monocle, reshape2, methods, stats, utils,
