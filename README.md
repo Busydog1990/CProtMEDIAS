@@ -1,4 +1,4 @@
-# genepro
+# PfamMEDIAS
 ---
 DNA/RNA/Protein sequences general analysis workflow after multiple sequences alignment
 
