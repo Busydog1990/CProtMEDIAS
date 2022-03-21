@@ -9,10 +9,10 @@ specific site search, pseudotime analysis, network construction and result visua
 ---
 if (!require(devtools)){install.packages("devtools")}
 
-devtools::install_github("Busydog1990/genepro")
+devtools::install_github("Busydog1990/PfamMEDIAS")
 
 ### vignette
 ---
-vignette("genepro")
+vignette("PfamMEDIAS")
 
 If you have any questions, contact me <zzhe@webmail.hzau.edu.cn>
