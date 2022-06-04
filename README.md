@@ -9,7 +9,7 @@ specific site search, pseudotime analysis, network construction and result visua
 ---
 if (!require(devtools)){install.packages("devtools")}
 
-devtools::install_github("Busydog1990/PfamMEDIAS")
+devtools::install_github("Busydog1990/CProtMEDIAS")
 
 ### vignette
 ---
