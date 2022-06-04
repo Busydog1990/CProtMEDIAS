@@ -1,8 +1,8 @@
 ---
-title: "genepro"
+title: "CProtMEDIAS"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{genepro}
+  %\VignetteIndexEntry{CProtMEDIAS}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 ```{r, eval=T, echo=T, warning=F, message=F}
 # Load the required packages
 require(Biostrings)
-require(genepro)
+require(CProtMEDIAS)
 
 # Some sample data
 data("Homeobox_small")
