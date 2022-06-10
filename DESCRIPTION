@@ -1,6 +1,6 @@
-Package: PfamMEDIAS
+Package: CProtMEDIAS
 Type: Package
-Title: PfamMEDIAS: PfamMEDIAS: clustering of Protein families by MErging and DIgitizing Aligned Sequences
+Title: CProtMEDIAS: clustering of amino acid sequences encoded by gene families by MErging and DIgitizing Aligned Sequences
 Version: 0.1.0
 Author: person(given = 'Zhe', family = 'Zhang', email = 'zzhe@webmail.hzau.edu.cn', 
                role = 'aut', comment = c(ORCID = '0000-0001-5265-6069'))
