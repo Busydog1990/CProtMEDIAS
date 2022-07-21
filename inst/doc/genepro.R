@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 ## ---- eval=T, echo=T, warning=F, message=F------------------------------------
 # Load the required packages
 require(Biostrings)
-require(genepro)
+require(CProtMEDIAS)
 
 # Some sample data
 data("Homeobox_small")
