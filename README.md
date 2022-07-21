@@ -13,6 +13,6 @@ devtools::install_github("Busydog1990/CProtMEDIAS")
 
 ### vignette
 ---
-vignette("CProtMEDIAS")
+vignette("genepro")
 
 If you have any questions, contact me <zzhe@webmail.hzau.edu.cn>
