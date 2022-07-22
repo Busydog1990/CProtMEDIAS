@@ -198,6 +198,7 @@ monocle_import <- function(otherCDS, import_all = FALSE) {
 monocle_workflow <- function(seurat,method = "DDRTree",ncenter = 5,...){
   monocle <- monocle_import(seurat)
   if (any(is.na(monocle$Size_Factor))){monocle$Size_Factor <- rep(1,length(monocle$Size_Factor))}
+  monocle@expressionFamily@vfamily <- monocle@expressionFamily@vfamily[1]
   monocle  <- monocle::reduceDimension(monocle, max_components = 2,
                                        reduction_method = method,ncenter = ncenter,...)
   monocle  <- monocle::orderCells(monocle,...)
