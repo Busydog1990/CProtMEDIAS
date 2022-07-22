@@ -19,6 +19,6 @@ If you have any questions, contact me <zzhe@webmail.hzau.edu.cn>
 
 ### Note
 
-As from R 4.2.0, conditions of length greater than one are an error in “if”. 
+As from R 4.2.0, conditions of length greater than one are an error in “if” (warnings in previous R version). 
 Run monocle_workflow function with R version above 4.2.0 will report an error.
 I will fix it in the upcoming version.
