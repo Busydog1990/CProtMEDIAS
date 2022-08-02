@@ -187,7 +187,9 @@ monocle_import <- function(otherCDS, import_all = FALSE) {
 #' Dimensionality reduction, classification and pseudotime analysis of the score matrix.
 #'
 #' @param seurat Seurat object.
+#' @param sites Site for pseudo-time analysis.If NULL, all sites are used for pseudo-time analysis.
 #' @param method A character string specifying the algorithm to use for dimensionality reduction.
+#' @param ncenter number of nodes allowed in the regularization graph.Default:5.
 #' @param ... Other parameters of reduceDimension and orderCells functions in monocle package.
 #' @import monocle
 #' @return CellDataSet object with dimensionality reduction, classification and pseudotime analysis results.
@@ -195,7 +197,10 @@ monocle_import <- function(otherCDS, import_all = FALSE) {
 #' @export
 #-------------------------------------------------------------------------------
 ##Pseudotime analysis applying monocle
-monocle_workflow <- function(seurat,method = "DDRTree",ncenter = 5,...){
+monocle_workflow <- function(seurat,sites = NULL,method = "DDRTree",ncenter = 5,...){
+  if (!is.null(sites)){
+    seurat <- seurat[sites,]
+  }
   monocle <- monocle_import(seurat)
   if (any(is.na(monocle$Size_Factor))){monocle$Size_Factor <- rep(1,length(monocle$Size_Factor))}
   monocle@expressionFamily@vfamily <- monocle@expressionFamily@vfamily[1]
