@@ -61,14 +61,17 @@ cluster_scatter <- function(dat,mapping = "umap",group = NULL,size = 1,text = T,
         point_dat$group <- group
         p1 <- ggplot(point_dat,aes(x = x,y = y,color = group)) + geom_point(size = size)
         p1 <- p1 + geom_segment(data = segment_dat,aes(x = x,y = y,xend = xend,yend = yend),
-                                size = segment_size,color = "black") +
-          geom_point(data = node_dat,aes(x = x,y = y),color = I("black"),size = I(5)) +
-          geom_text(data = node_text_dat,aes(x = x,y = y,label = label),color = I("white"),size = I(4))
+                                size = segment_size,color = "black")
+          if (nrow(node_dat)){
+            p1 <- p1 + geom_point(data = node_dat,aes(x = x,y = y),color = I("black"),size = I(5)) +
+                       geom_text(data = node_text_dat,aes(x = x,y = y,label = label),
+                                 color = I("white"),size = I(4))}
       } else {
         p1 <- ggplot(point_dat,aes(x = x,y = y)) + geom_point(size = size)
-        p1 <- p1 + geom_segment(data = segment_dat,aes(x = x,y = y,xend = xend,yend = yend),size = segment_size) +
-          geom_point(data = node_dat,aes(x = x,y = y),color = I("black"),size = I(5)) +
-          geom_text(data = node_text_dat,aes(x = x,y = y,label = label),color = I("white"),size = I(4))
+        p1 <- p1 + geom_segment(data = segment_dat,aes(x = x,y = y,xend = xend,yend = yend),size = segment_size)
+        if (nrow(node_dat)){
+          p1 <- p1 + geom_point(data = node_dat,aes(x = x,y = y),color = I("black"),size = I(5)) +
+          geom_text(data = node_text_dat,aes(x = x,y = y,label = label),color = I("white"),size = I(4))}
         return(p1)
       }
       if (text){
