@@ -15,7 +15,7 @@ devtools::install_github("Busydog1990/CProtMEDIAS")
 ---
 vignette("genepro")
 
-If you have any questions, contact me <zzhe@webmail.hzau.edu.cn>
+If you have any questions, contact me <zzhe@mail.hzau.edu.cn>
 
 ### Note
 
